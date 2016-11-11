@@ -1,5 +1,6 @@
 <style>
     #footer{        
+        display:none;
         top:0px;
         left:0px;
         padding:15px;

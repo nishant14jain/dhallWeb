@@ -4,17 +4,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Untitled</title>
+        <title>Dhall Chopra Group</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/normalize.css">
-        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
         <script src="<?php echo base_url() ?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/common.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/header.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -26,7 +29,7 @@
         if ($header)
             echo $header;
         ?>
-        <div class='body' style='min-height:calc(100vh - 50px);padding:50px'>
+        <div class='content'>
             <?php
             if ($middle)
                 echo $middle;  // load specific page content 
