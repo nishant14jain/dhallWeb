@@ -24,9 +24,15 @@
         <!-- Add your site or application content here -->        
         <?php
         if ($header)
-            echo $header;       
-        if ($middle)
-            echo $middle;  // load specific page content 
+            echo $header;
+        ?>
+        <div class='body' style='min-height:calc(100vh - 50px);padding:50px'>
+            <?php
+            if ($middle)
+                echo $middle;  // load specific page content 
+            ?>
+        </div>
+        <?php
         if ($footer)
             echo $footer;
         ?>
