@@ -1,1 +1,1 @@
-<h1>homepage body</h1>
+<h1>Yayy! We're on Github now!</h1>
