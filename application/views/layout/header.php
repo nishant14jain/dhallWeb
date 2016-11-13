@@ -1,6 +1,3 @@
-
-
-
 <div class="header">
     <div class="lane1 header-lane">
         <ul class="header-nav pull-right">

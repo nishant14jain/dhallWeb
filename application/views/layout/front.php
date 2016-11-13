@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -12,7 +11,7 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/normalize.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
         <script src="<?php echo base_url() ?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.css">
