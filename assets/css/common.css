@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 body{
     font-family: 'Source Sans Pro', sans-serif;        
-    color:#555;
+    color:#555;    
 }
 a{
     text-decoration:none !important;
@@ -71,8 +71,75 @@ a{
 }
 .homepage-section .content-wrapper .offering-card p.desc{
     font-weight: 600;
-    color: rgba(0,0,0,0.45);
+    color: rgba(0,0,0,0.5);
 }
+.homepage-section .content-wrapper{
+    padding-bottom:50px;
+}
+.whoweare-section{
+    background:#F5F5F5;    
+}
+.whoweare-section h2{
+    line-height:30px;
+    font-size:20px;
+    margin:0;
+}
+.whoweare-section .timeline-wrapper{
+    padding:60px 0px;
+}
+.timeline-wrapper .timeline{
+    width:100%;
+    height:4px;
+    background:#ddd;
+}
+.timeline .bar{
+    height:100%;
+    float:left;
+    width: calc(25% - 25px);
+    background:transparent;
+}
+.timeline .dot{
+    float: left;
+    width: 20px;
+    position:relative;
+    height: 20px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -8px;
+}
+.timeline .dot:after {
+    content: "1959";
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0.5;
+    transform: translateX(-26%);
+}
+.timeline .dot.active:after {
+    opacity: 1;
+}
+.dot.dot2:after{
+    content:"1980";
+}
+.dot.dot3:after{
+    content:"1995";
+}
+.dot.dot4:after{
+    content:"2000";
+}
+.dot.dot5:after{
+    content:"2005";
+}   
+.timeline .bar.active,.timeline .dot.active{
+    background:#555;
+}
+.collab-section .collab-logo{
+    display:inline-block;
+    padding: 15px 30px;
+}
+
 
 
 
