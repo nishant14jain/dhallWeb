@@ -1,15 +1,11 @@
 <style>
-    #footer{        
-        display:none;
-        top:0px;
-        left:0px;
+    .footer{                
         padding:15px;
-        height:50px;
-        background:#333;
+        height:350px;
+        background:#F5F5F5;
         width:100%;
-        text-align:center;
-        color:white;
+        text-align:center;        
     }
 </style>
 
-<div id='footer'>Footer</div>
+<div class='footer'></div>

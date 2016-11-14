@@ -1,33 +1,5 @@
 <style>
-    .homepage-section .content-wrapper{
-        padding-bottom:50px;
-    }
-    .whoweare-section{
-        background:#F5F5F5;
-        margin-bottom:1000px;
-    }
-    .whoweare-section h2{
-        line-height:30px;
-        font-size:20px;
-        margin:0;
-    }
-    .whoweare-section .timeline-wrapper{
-        padding:60px 0px;
-    }
-    .timeline-wrapper .timeline{
-        width:100%;
-        height:4px;
-        background:#ddd;
-    }
-    .timeline .bar{
-        height:100%;
-        float:left;
-        width:25%;
-        background:transparent;
-    }
-    .timeline .bar.active{
-        background:#555;
-    }
+
 </style>
 
 
@@ -88,12 +60,32 @@
         </h2>    
         <div class="timeline-wrapper">
             <div class="timeline">
+                <div class="dot dot1 active"></div>
                 <div class="bar active"></div>
+                <div class="dot dot2 active"></div>
                 <div class="bar"></div>
+                <div class="dot dot3"></div>
                 <div class="bar"></div>
+                <div class="dot dot4"></div>
                 <div class="bar"></div>
+                <div class="dot dot5"></div>
                 <div class="clearfix"></div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-section collab-section">
+    <h1>INTERNATIONAL COLLABORATIONS</h1>
+    <div class="content-wrapper text-center">
+        <div class="collab-logo">
+            <img src="assets/icons/reisky.gif">
+        </div>
+        <div class="collab-logo">
+            <img src="assets/icons/zimmer-austria.gif">
+        </div>
+        <div class="collab-logo">
+            <img height="60px" src="assets/icons/zimmer-america.png">
         </div>
     </div>
 
