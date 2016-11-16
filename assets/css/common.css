@@ -53,10 +53,10 @@ a{
     display: inline-block;
     text-align: left;
     padding: 15px;
-    max-width: 350px;
-    margin: 15px;
+    max-width: 500px;
+    margin: 30px;
     border: 1px solid #ddd;
-    box-shadow: 0px 4px 18px -8px;
+    box-shadow: 0px 12px 23px -13px;
 }
 .homepage-section .content-wrapper .offering-card .icon img{
     width:50px;
