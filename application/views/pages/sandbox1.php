@@ -27,6 +27,7 @@
         font-family: 'Open Sans', sans-serif;
         background:#F8F8F8;
         font-weight:600;
+        font-size:16px;
     }    
     .wrapper{
         padding-top:71px;
@@ -95,7 +96,7 @@
 <style>
     .hero-heading{       
         margin:0;
-        padding:40px 15px;
+        padding:20px 15px;
         font-weight:600;
         border-bottom: 1px solid #ddd;
     }
@@ -133,6 +134,59 @@
     }
     #signin-form .form-control{
         height:40px;
+        box-shadow: none;
+        border: 1px solid #ddd;
+        font-weight: 400;
+    }
+    #signin-form .submit-btn{
+        padding:10px 25px;
+        font-weight:400;
+        border: 0;
+        border-radius: 3px;
+        min-width: 100%;
+        font-size: 18px;
+    } 
+    #signin-form .linkedin-btn{
+        padding:10px 25px;
+        font-weight:400;
+        border: 0;
+        border-radius: 3px;
+        min-width: 100%;
+        font-size: 18px;
+        background:#0085AF;
+    }
+    #signin-form p.login-helper{
+        font-size:13px;
+        color:#4d4d4d;
+        font-weight:400;
+        padding:10px 0px;
+    }
+    .login-helper a{
+        text-decoration:underline !important;
+        color:#4d4d4d;
+    }
+    .linkedin-btn i{
+        background:white;
+        padding:5px;
+        border-radius:3px;
+        margin-left:10px;
+        color:#0085AF;
+    }
+    .or-creative{
+        width: 100%;
+        border-top: 1px double #ddd;
+        position: relative;
+        margin: 20px 0px;        
+        border-bottom: 1px solid #ddd;
+        height: 4px;
+    }
+    .or-creative span{
+        position: absolute;
+        left: 50%;        
+        background: #F8F8F8;
+        transform: translate(-50%,-50%);
+        padding: 5px 25px;
+        margin-top: 2px;
     }
 </style>
 
@@ -184,16 +238,18 @@
     </section>
 
     <!--sign in page-->
-    <section class="sandbox-signin">
+    <section class="sandbox-signin hidden">
         <h1 class="hero-heading greenColor whiteBg text-center">SIGN IN</h1>
         <div class="container text-center">
             <form id="signin-form">
                 <div class="form-group userType-radio">
                     <label class="form-check-inline blueColor">
-                        <input class="form-check-input" type="radio" name="userTypeRadio" id="userType1" value="option1"> Personal User
+                        <input class="form-check-input" type="radio" name="userTypeRadio" id="userType1" value="option1">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>  Personal User
                     </label>
                     <label class="form-check-inline blueColor">
-                        <input class="form-check-input" type="radio" name="userTypeRadio" id="userType2" value="option2"> Business User
+                        <input class="form-check-input" type="radio" name="userTypeRadio" id="userType2" value="option2"> 
+                        <i class="fa fa-suitcase" aria-hidden="true"></i> Business User
                     </label>
                 </div>
                 <div class="form-group">
@@ -217,12 +273,37 @@
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="email" placeholder="*Confirm Password">
+                </div>                
+                <!--
+                insert your data site key here. for more info, read this article:
+                https://webdesign.tutsplus.com/tutorials/how-to-integrate-no-captcha-recaptcha-in-your-website--cms-23024-->
+                <div class='form-group'>
+                    <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="greenBg whiteColor text-center submit-btn">Let's Go!</button>
+                    <p class='login-helper'>I have an account. <a href='#'>Login</a></p>
+                </div>
+                <div class='or-creative'>
+                    <span>OR</span>
+                </div>
+                <div class='form-group'>
+                    <button type="submit" class="greenBg whiteColor text-center linkedin-btn">Signup via LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></button>
                 </div>
             </form>
+
         </div>
+    </section>
+    
+    <!--login page-->
+    <section class='sandbox-login'>
+        <h1 class="hero-heading greenColor whiteBg text-center">LOG IN</h1>
+            
     </section>
 </div>
 
 <div class="footnav">
     © 2016 Translate By Humans [Innovative Humans Limited]. All Rights Reserved.
 </div>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
