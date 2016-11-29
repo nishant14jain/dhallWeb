@@ -60,6 +60,7 @@
     ul{
         padding:0;
         margin:0;
+        list-style:none;
     }
     .headnav ul li{
         display:inline-block;
@@ -123,7 +124,7 @@
 </style>
 
 <style>
-    #signin-form{
+    #signin-form,#login-form{
         max-width:400px;
         margin:40px auto;
     }
@@ -132,13 +133,13 @@
         cursor:pointer;
         font-weight:600;
     }
-    #signin-form .form-control{
+    .form-control{
         height:40px;
         box-shadow: none;
         border: 1px solid #ddd;
         font-weight: 400;
     }
-    #signin-form .submit-btn{
+    .submit-btn{
         padding:10px 25px;
         font-weight:400;
         border: 0;
@@ -146,7 +147,7 @@
         min-width: 100%;
         font-size: 18px;
     } 
-    #signin-form .linkedin-btn{
+    .linkedin-btn{
         padding:10px 25px;
         font-weight:400;
         border: 0;
@@ -155,7 +156,7 @@
         font-size: 18px;
         background:#0085AF;
     }
-    #signin-form p.login-helper{
+    p.login-helper{
         font-size:13px;
         color:#4d4d4d;
         font-weight:400;
@@ -187,6 +188,18 @@
         transform: translate(-50%,-50%);
         padding: 5px 25px;
         margin-top: 2px;
+    }
+</style>
+
+<!--sandbox home page-->
+<style>
+    .sandbox-home .sidebar{
+        float:left;
+        width:200px;        
+    }
+    .sandbox-home .tabs-outer{
+        width:calc(100% - 200px);
+        
     }
 </style>
 
@@ -294,11 +307,70 @@
 
         </div>
     </section>
-    
+
     <!--login page-->
-    <section class='sandbox-login'>
+    <section class='sandbox-login hidden'>
         <h1 class="hero-heading greenColor whiteBg text-center">LOG IN</h1>
-            
+        <div class="container text-center">
+            <form id="login-form">                
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="*E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="email" placeholder="*Password">
+                </div>                             
+                <!--
+                insert your data site key here. for more info, read this article:
+                https://webdesign.tutsplus.com/tutorials/how-to-integrate-no-captcha-recaptcha-in-your-website--cms-23024-->
+                <div class='form-group'>
+                    <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="greenBg whiteColor text-center submit-btn">Log In!</button>
+                    <p class='login-helper'><a href='#'>Forgot your Password?</a></p>
+                </div>
+                <div class='or-creative'>
+                    <span>OR</span>
+                </div>
+                <div class='form-group'>
+                    <button type="submit" class="greenBg whiteColor text-center linkedin-btn">Signup via LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                    <p class='login-helper'>Don't have an account yet? <a href='#'>Create New</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!--sandbox home-->
+    <section class='sandbox-home'>
+        <h1 class="hero-heading greenColor whiteBg text-center">SANDBOX HOME</h1>
+        <div class='container'>
+            <div class='sidebar'>
+                <ul>
+                    <li>
+                        <a href='#!'>Home</a>
+                    </li>
+                    <li>
+                        <a href='#!'>Testing Summary</a>
+                    </li>
+                    <li>
+                        <a href='#!'>Testing Report One</a>
+                    </li>
+                    <li>
+                        <a href='#!'>Credits</a>
+                    </li>
+                    <li>
+                        <a href='#!'>History</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='tabs-outer'>
+                <div class='tab-content'></div>
+                <div class='tab-content'></div>
+                <div class='tab-content'></div>
+                <div class='tab-content'></div>
+            </div>
+            <div class='clearfix'></div>
+        </div>
     </section>
 </div>
 
