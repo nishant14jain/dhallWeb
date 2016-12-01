@@ -26,7 +26,7 @@
     body{
         font-family: 'Open Sans', sans-serif;
         background:#F8F8F8;
-        font-weight:600;
+        font-weight:400;
         font-size:16px;
     }    
     .wrapper{
@@ -43,6 +43,7 @@
     }
     .headnav{
         position:fixed;
+        font-weight:600;
         top:0px;left:0px;
         height:71px;
         width:100%;
@@ -193,13 +194,54 @@
 
 <!--sandbox home page-->
 <style>
+    .sandbox-home{
+        background:#f8f8f8;
+    }
+
+    .sandbox-home .tabs-outer{
+        width:calc(100% - 200px);        
+    }
     .sandbox-home .sidebar{
-        float:left;
-        width:200px;        
+        float:left;                
+        width:200px;
+        min-height:calc(100vh - 200px);  
+
+        /*        box-shadow:inset -5px 0px 10px -10px;
+                -webkit-box-shadow:inset -5px 0px 10px -10px;
+                -moz-box-shadow:inset -5px 0px 10px -10px;
+                -ms-box-shadow:inset -5px 0px 10px -10px;*/
+    }    
+    .sandbox-home .sidebar .tab-remote{
+        color: #555;
+        font-weight: 400;
+        display: block;
+        margin-bottom:1px;
+        padding: 10px 15px;
+        transition: all 0.2s;
+        cursor:pointer;
+    }
+    .sandbox-home .sidebar .tab-remote:hover{
+        background: #eee;
+        color: #3164AD;
+    }
+    .sandbox-home .sidebar .tab-remote.active{
+        color: #3164AD;        
+        background: #eee;
+        border-right: 5px solid #3164AD;
     }
     .sandbox-home .tabs-outer{
-        width:calc(100% - 200px);
-        
+        float:left;
+        padding:15px;
+        border-left:1px solid #ddd;
+        background:white;
+        width:calc(100% - 200px);        
+        min-height:calc(100vh - 200px);
+    }
+    .sandbox-home .tabs-outer .tab-content{
+        display:none;
+    }
+    .sandbox-home .tabs-outer .tab-content.active{
+        display:block;
     }
 </style>
 
@@ -339,38 +381,131 @@
             </form>
         </div>
     </section>
-    
+
     <!--sandbox home-->
     <section class='sandbox-home'>
         <h1 class="hero-heading greenColor whiteBg text-center">SANDBOX HOME</h1>
-        <div class='container'>
-            <div class='sidebar'>
-                <ul>
-                    <li>
-                        <a href='#!'>Home</a>
-                    </li>
-                    <li>
-                        <a href='#!'>Testing Summary</a>
-                    </li>
-                    <li>
-                        <a href='#!'>Testing Report One</a>
-                    </li>
-                    <li>
-                        <a href='#!'>Credits</a>
-                    </li>
-                    <li>
-                        <a href='#!'>History</a>
-                    </li>
-                </ul>
-            </div>
-            <div class='tabs-outer'>
-                <div class='tab-content'></div>
-                <div class='tab-content'></div>
-                <div class='tab-content'></div>
-                <div class='tab-content'></div>
-            </div>
-            <div class='clearfix'></div>
+        <div class='sidebar'>
+            <ul>
+                <li class="tab-remote active" data-trigger="#sandboxhome-tab1">
+                    Home
+                </li>
+                <li class="tab-remote" data-trigger="#sandboxhome-tab2">
+                    Testing Summary
+                </li>
+                <li class="tab-remote" data-trigger="#sandboxhome-tab3">
+                    Testing Report One
+                </li>
+                <li class="tab-remote" data-trigger="#sandboxhome-tab4">
+                    Credits
+                </li>
+                <li class="tab-remote" data-trigger="#sandboxhome-tab5">
+                    History
+                </li>
+            </ul>
         </div>
+        <div class='tabs-outer'>
+            <div id="sandboxhome-tab1" class='tab-content active'>
+                <h1>Tab 1</h1>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+            </div>
+            <div id="sandboxhome-tab2" class='tab-content'>
+                <h1>Tab 2</h1>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+            </div>
+            <div id="sandboxhome-tab3" class='tab-content'>
+                <h1>Tab 3</h1>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+            </div>
+            <div id="sandboxhome-tab4" class='tab-content'>
+                <h1>Tab 4</h1>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+            </div>
+            <div id="sandboxhome-tab5" class='tab-content'>
+                <h1>Tab 5</h1>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+                </p>
+                <p>qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem</p>
+                <p>
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi eum fugiat quo voluptas nulla pariatur?
+                </p>
+            </div>
+        </div>
+        <div class='clearfix'></div>
     </section>
 </div>
 
@@ -379,3 +514,14 @@
 </div>
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+<script>
+    $('.sandbox-home .tab-remote').click(function () {
+        $('.sandbox-home .tab-remote').removeClass('active');
+        $(this).addClass('active');
+        var target_id = $(this).attr('data-trigger');
+        $('.sandbox-home .tab-content').hide();
+        $(target_id).show();
+    });
+</script>
