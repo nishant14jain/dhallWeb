@@ -44,6 +44,7 @@
     .headnav{
         position:fixed;
         z-index:5555;
+        box-shadow: 0px 1px 18px -9px black;
         font-weight:600;
         top:0px;left:0px;
         height:71px;
@@ -76,7 +77,7 @@
         background: #4CAD50;
     }
     .blueColor{
-        color:#004A94;
+        color:#0070B4;
     }
     .blueBg{
         background: #004A94;
@@ -384,7 +385,7 @@
     </section>
 
     <!--sandbox home-->
-    <section class='sandbox-home'>
+    <section class='sandbox-home hidden'>
         <h1 class="hero-heading greenColor whiteBg text-center">SANDBOX HOME</h1>
         <div class='sidebar'>
             <ul>
@@ -513,9 +514,11 @@
 
     <!--API Documentation-->
     <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/prism.css">
+    <script src="<?php echo base_url() ?>assets/js/prism.js"></script>
     <style>
         .wrapper{
-            background:white;
+            /*background:white;*/
         }
         .apiDoc-hero{
             padding:75px 0px;
@@ -561,31 +564,283 @@
             color: #555;
         }
     </style>
-
-    <section class="apiDoc-hero hidden">        
-        <div class="hero-flag">
-            <h1>API Documentation</h1>
-            <h2>Way to change your translation medium.</h2>
-        </div>        
-    </section>
-    <section class="apiDoc-body container">        
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                <h2>Getting Started</h2>
-                <p>Explore the basics of using the Translate by Humans API with our simple walkthrough.</p>
-                <a href="">Learn More</a>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                <h2>API details</h2>
-                <p>Complete documentation of all TBH API calls, including helpful code examples.</p>
-                <a href="">View Documentation</a>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                <h2>Sandbox Testing</h2>
-                <p>Test your application safely using the TBH Sandbox, a repro-duction of the live API.</p>
-                <a href="">Try the Sandbox</a>
+    <section class="apiDoc hidden">
+        <div class="apiDoc-hero">        
+            <div class="hero-flag">
+                <h1>API Documentation</h1>
+                <h2>Way to change your translation medium.</h2>
+            </div>        
+        </div>
+        <div class="apiDoc-body container">        
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <h2>Getting Started</h2>
+                    <p>Explore the basics of using the Translate by Humans API with our simple walkthrough.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <h2>API details</h2>
+                    <p>Complete documentation of all TBH API calls, including helpful code examples.</p>
+                    <a href="">View Documentation</a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <h2>Sandbox Testing</h2>
+                    <p>Test your application safely using the TBH Sandbox, a repro-duction of the live API.</p>
+                    <a href="">Try the Sandbox</a>
+                </div>
             </div>
         </div>
+    </section>
+
+    <style>
+        .apiDoc2-sidebar{
+            float: left;
+            width: 200px;
+            padding:30px 0px;
+            min-height: calc(100vh - 120px);
+        }
+        .apiDoc2-body{
+            float: left;
+            padding: 15px 25px;
+            border-left: 1px solid #ddd;
+            background: white;
+            width: calc(100% - 200px);
+            min-height: calc(100vh - 120px);
+        }
+        .apiDoc2-sidebar h2{
+            font-size: 16px;
+            padding: 10px;
+            margin: 0px;
+            font-weight: 700;
+        }
+        .apiDoc2-sidebar li{
+            padding:5px 10px;
+            font-size:13px;
+            margin:1px 0;
+            cursor:pointer;
+        }
+        .apiDoc2-sidebar li:hover,.apiDoc2-sidebar li.active{
+            background: #eee;
+            color: #3164AD;
+            border-right: 5px solid #3164AD;
+        }
+        .apiDoc2 .tab-content{
+            display:none;
+        }
+        .apiDoc2 .tab-content.active{
+            display:block;
+        }
+        .apiDoc2 .tab-content h1{
+            font-weight:600;
+            color:#0070B4;
+        }
+        .apiDoc2 .tab-content h2{
+            font-size:24px;
+            font-weight:600;
+            margin:30px 0;
+            color:#003B63;
+        }
+        .apiDoc2 .tab-content h3{
+            font-size:18px;
+            font-weight:600;
+            margin-top:40px;
+        }
+        .apiDoc2 .tab-content p{
+            line-height: 25px;
+            color: #777;
+        }
+        .apiDoc2 .tab-content p a{
+            font-weight:600;
+        }
+        .apiDoc2 .tab-content ol li{
+            color:#003B63;
+            list-style-type: disc;
+            padding:3px 0px;
+            font-weight:600;
+        }
+        #apiDoc2-tab7 .job-list{
+            padding:40px 0px;           
+        }
+        #apiDoc2-tab7 .job-item{
+            display:table;
+            font-size:14px;
+            margin:10px 0px;
+        }
+        .job-status, .job-desc{
+            display:table-cell;            
+        }
+        .job-status{            
+            border-radius: 3px;
+            padding: 0px 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            color: rgba(0,0,0,0.5);
+            min-width:80px;
+            text-align:center;
+        }
+        .job-status.red{
+            background: rgba(255,0,0,0.3);
+        }
+        .job-status.yellow{
+            background: #FFECB3;
+        }
+        .job-status.green{
+            background: rgba(0,255,0,0.3);
+        }
+        .job-desc{            
+            padding:5px 10px;
+            color:#777;
+        }
+        #apiDoc2-tab7 pre{
+            max-width:800px;
+        }
+    </style>
+    <section class="apiDoc2">
+        <div class="apiDoc2-sidebar">
+            <h2 class="blueColor">GETTING STARTED</h2>
+            <ul>
+                <li class="tab-remote active" data-trigger="#apiDoc2-tab1">Client libraries</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab2">Account & API keys</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab3">Sandbox testing</li>
+            </ul>
+            <h2 class="blueColor">API DETAILS</h2>
+            <ul>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab4">Overview</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab5">First steps</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab6">Payloads</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab7">Job statuses</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab8">Callback URLs</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab9">Error codes</li>
+                <li class="tab-remote" data-trigger="#apiDoc2-tab10">Authentication</li>                
+            </ul>
+
+        </div>
+        <div class="apiDoc2-body">
+            <div id="apiDoc2-tab1" class="tab-content active">
+                <h1 class="blueColor">Client libraries</h1>
+                <h2>Library selection</h2>                
+                <h3 class="blueColor">Official libraries</h3>
+                <p>We provide oﬃcial client libraries for a few popular programming languages, ready to drop straight into your
+                    code. We host them on Github, and encourage you to fork them.
+                </p>
+                <ol>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Ruby</li>
+                </ol>
+                <h3 class="blueColor">Community libraries</h3>
+                <p>
+                    Our developer community has created client libraries of their own (thanks!). These are maintained by the original author, and we provide links to them here for convenience:
+                </p>
+                <ol>
+                    <li>Rocket</li>
+                    <li>NodeJS</li>
+                    <li>Clojure</li>                    
+                </ol>
+                <p>
+                    You are encouraged to use our <a href="">Sandbox</a> for testing your implementation. Wrote your own client library in a language not seen here?<a href=""> Let us know!</a> All code is provided on an as-is basis under the <a href="">New BSD license.</a>
+                </p>
+
+
+            </div>
+            <div id="apiDoc2-tab2" class="tab-content">
+                <h1>Account & API keys</h1>
+            </div>
+            <div id="apiDoc2-tab3" class="tab-content">
+                <h1>Sandbox testing</h1>
+            </div>
+            <div id="apiDoc2-tab4" class="tab-content">
+                <h1>API overview</h1>
+            </div>
+            <div id="apiDoc2-tab5" class="tab-content">
+                <h1>First steps</h1>
+            </div>
+            <div id="apiDoc2-tab6" class="tab-content">
+                <h1>Payloads</h1>
+                <p>Most of the processing throughout the Translate API will be around a Job Payload. This is a simple container repre-senting the instance of a translation job.</p>
+                <ol>
+                    <li>Job Payload - for responses</li>
+                    <li>Job Payload - for submissions</li>                   
+                </ol>
+            </div>
+            <div id="apiDoc2-tab7" class="tab-content">
+                <h1>Job statuses</h1>
+                <p>Each submitted job goes through a series of statuses before delivery. At any time when you request the contents of a job, it will be in one of the following states:</p>
+                <div class="job-list">
+                    <div class="job-item">
+                        <div class="job-status yellow">queued</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                    <div class="job-item">
+                        <div class="job-status green">finished</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                    <div class="job-item">
+                        <div class="job-status red">error</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                    <div class="job-item">
+                        <div class="job-status yellow">queued</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                    <div class="job-item">
+                        <div class="job-status yellow">queued</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                    <div class="job-item">
+                        <div class="job-status yellow">queued</div>
+                        <div class="job-desc">:The jobs are being processed by our system but are not currently visible to our translators.</div>
+                    </div>
+                </div>
+                <h2>Retrieving language pairs</h2>
+                <p>First we’ll make a simple call to retrieve a list of translation language pairs.</p>
+                <pre class="language-javascript line-numbers">
+                 <code>
+                    #!/usr/bin/python 
+                    # -*- coding: utf-8 -*-
+                    import cgi 
+                    import json
+                    form = cgi.FieldStorage() 
+                    print("Content-type: text/html\n") 
+                    if "comment" in form:
+                        json_data = form["comment"].value
+                    else:
+                        json_data = False                    
+                    if json_data:   
+                        data = json.loads(json_data, 'utf-8')     
+                        comment = {}
+                        
+                        # job id to which comment applies
+                        comment["job_id"] = data["job_id"]
+                        
+                        # actual comment text
+                        comment["body"] = data["body"]
+                        
+                        # comment creation time
+                        comment["ctime"] = data["ctime"]     
+                        
+                        # custom data from job (if any)
+                        custom_data = data["custom_data"] if "custom_data" in data else None
+                        
+                        print(comment)    
+                        print(custom_data) 
+                    else:     
+                        print("fail")
+                 </code>    
+                </pre>
+
+            </div>
+            <div id="apiDoc2-tab8" class="tab-content">
+                <h1>Callback URLs</h1>
+            </div>
+            <div id="apiDoc2-tab9" class="tab-content">
+                <h1>Error codes</h1>
+            </div>
+            <div id="apiDoc2-tab10" class="tab-content">
+                <h1>Authentication</h1>
+            </div>
+        </div>
+        <div class="clearfix"></div>
     </section>
 </div>
 
@@ -602,6 +857,14 @@
         $(this).addClass('active');
         var target_id = $(this).attr('data-trigger');
         $('.sandbox-home .tab-content').hide();
+        $(target_id).show();
+    });
+
+    $('.apiDoc2 .tab-remote').click(function () {
+        $('.apiDoc2 .tab-remote').removeClass('active');
+        $(this).addClass('active');
+        var target_id = $(this).attr('data-trigger');
+        $('.apiDoc2 .tab-content').hide();
         $(target_id).show();
     });
 </script>
