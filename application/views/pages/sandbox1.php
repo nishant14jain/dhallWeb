@@ -43,6 +43,7 @@
     }
     .headnav{
         position:fixed;
+        z-index:5555;
         font-weight:600;
         top:0px;left:0px;
         height:71px;
@@ -506,6 +507,85 @@
             </div>
         </div>
         <div class='clearfix'></div>
+    </section>
+
+
+
+    <!--API Documentation-->
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet">
+    <style>
+        .wrapper{
+            background:white;
+        }
+        .apiDoc-hero{
+            padding:75px 0px;
+            width:100%;
+            background: url(https://www.translatebyhumans.com/webroot/images/bnr-document.png);
+            position: relative;
+            background-size: cover;
+        }       
+        .apiDoc-hero .hero-flag{            
+            background: rgba(10, 102, 160,0.9);
+            padding: 25px;
+            color: white;
+            padding-left:45px;
+            display:inline-block;            
+        }
+        .apiDoc-hero .hero-flag h1{
+            margin:5px 0px;    
+            font-family: 'Rokkitt', serif;
+            font-weight:700;
+            font-size:60px;
+        }
+        .apiDoc-hero .hero-flag h2{
+            font-size:20px;
+            margin:5px 0px;
+            font-weight:lighter;            
+        }
+        .apiDoc-body{
+            padding:40px 15px;
+            background:white;
+        }
+        .apiDoc-body h2{
+            color:#4CAD50;              
+            font-size:22px;
+            font-weight:600;
+        }
+        .apiDoc-body p{
+            color:#777;
+            font-weight:400;
+            line-height:30px;
+        }
+        .apiDoc-body a{
+            font-weight: 600;
+            color: #555;
+        }
+    </style>
+
+    <section class="apiDoc-hero hidden">        
+        <div class="hero-flag">
+            <h1>API Documentation</h1>
+            <h2>Way to change your translation medium.</h2>
+        </div>        
+    </section>
+    <section class="apiDoc-body container">        
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <h2>Getting Started</h2>
+                <p>Explore the basics of using the Translate by Humans API with our simple walkthrough.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <h2>API details</h2>
+                <p>Complete documentation of all TBH API calls, including helpful code examples.</p>
+                <a href="">View Documentation</a>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <h2>Sandbox Testing</h2>
+                <p>Test your application safely using the TBH Sandbox, a repro-duction of the live API.</p>
+                <a href="">Try the Sandbox</a>
+            </div>
+        </div>
     </section>
 </div>
 
