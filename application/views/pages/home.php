@@ -1,16 +1,15 @@
-<style>
-
-</style>
-
-
 <div class="homepage-hero">
     <div class='overlay'>
-        <div class="hero-content text-center">
-            <img height="100px" src="<?php echo base_url() ?>assets/images/logo.jpg">
-            <h1>Delivering High Performance</h1>
+        <div class="hero-content text-center">            
+            <h1>DELIVERING HIGH PERFORMANCE</h1>
+            <h2>Since 1959</h2>
         </div>
     </div>
 </div>
+<div class="hero-slider text-center">
+    <span class="hero-title">Background image title</span>
+</div>
+
 <div class="homepage-section whatweoffer-section">
     <h1>WHAT WE OFFER</h1>
     <div class="content-wrapper text-center">
@@ -88,7 +87,12 @@
             <img height="60px" src="assets/icons/zimmer-america.png">
         </div>
     </div>
-
 </div>
+
+<script>
+    $(document).ready(function () {
+$('.homepage-hero .hero-content h1').fadeIn()
+    });
+</script>
 
 

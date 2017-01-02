@@ -22,7 +22,7 @@ a{
     width:100%;
 }
 .homepage-hero .overlay{
-    background:rgba(50,50,50,0.70);
+    background:rgba(0,0,0,0.70);
     height:100%;
     width:100%;        
 }
@@ -34,17 +34,33 @@ a{
     vertical-align:middle;        
 }
 .homepage-hero .hero-content h1{
+    color:white;    
+    font-weight: 600;
+    font-size:45px;
+    letter-spacing: 4px;
+}
+.homepage-hero .hero-content h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.hero-slider{
+    padding:15px;
+    background:#111111;    
+}
+.hero-slider .hero-title{
     color:white;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-weight:300;
+    font-size:16px;
 }
 .homepage-section{
     padding:5px 15px;
 }
 .homepage-section h1{
-    text-align: center;
-    font-weight: 600;
+    font-family: 'Patua One', cursive;        
     letter-spacing: 1px;
+    color:#333;
     margin-top: 50px;
     font-size: 27px;
     margin-bottom: 30px;      

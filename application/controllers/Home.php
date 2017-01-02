@@ -19,4 +19,9 @@ class Home extends MY_Controller {
         $this->middle = 'pages/sandbox1'; // its your view name, change for as per requirement.
         $this->layout();
     }
+    
+    public function credit(){
+        $this->middle = 'pages/credit'; // its your view name, change for as per requirement.
+        $this->layout();
+    }
 }
