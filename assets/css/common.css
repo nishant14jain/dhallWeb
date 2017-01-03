@@ -11,15 +11,40 @@ body{
     font-family: 'Source Sans Pro', sans-serif;        
     color:#555;    
 }
+::-webkit-scrollbar {
+    width: 10px;        
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;     
+    box-shadow:inset 0px 0px 7px -5px black;
+}
+
+::-webkit-scrollbar-thumb {        
+    background:#777;        
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#333;
+}
 a{
     text-decoration:none !important;
 }
 /*-----------Home Page Stuff: START-------------*/
 .homepage-hero{
-    background:url('../../assets/images/home-hero.jpg');
+    background:url('../../assets/images/home-hero.jpg') fixed;
     background-size:cover;
-    height:400px;
-    width:100%;
+    height:500px;
+    height: calc(100vh - 50px);
+    width: 100%;
+    min-height: 400px;
+}
+.red-dash{
+    margin-top: 30px;
+    border-bottom: 5px solid #FE000F;
+    width: 35px;
+}
+.offwhiteBg{
+    background:#f5f5f5;
 }
 .homepage-hero .overlay{
     background:rgba(0,0,0,0.70);
@@ -34,20 +59,29 @@ a{
     vertical-align:middle;        
 }
 .homepage-hero .hero-content h1{
-    color:white;    
+    color:white;        
     font-weight: 600;
     font-size:45px;
     letter-spacing: 4px;
 }
 .homepage-hero .hero-content h2{
-    font-size: 30px;
+    font-size: 30px;    
     color: white;
     font-weight: 100;
     letter-spacing: 1px;
 }
-.hero-slider{
+.hero-slider{    
     padding:15px;
-    background:#111111;    
+    background:black;    
+}
+.hero-slider .hero-slider-arrow{
+    color:rgba(255,255,255,0.7);
+    cursor:pointer;
+    padding:10px;
+    transition:all 0.2s;
+}
+.hero-slider .hero-slider-arrow:hover{
+    color:white;
 }
 .hero-slider .hero-title{
     color:white;
@@ -55,15 +89,16 @@ a{
     font-size:16px;
 }
 .homepage-section{
-    padding:5px 15px;
+    padding:100px 15px;
+    border-bottom: 1px solid #eee;
 }
 .homepage-section h1{
     font-family: 'Patua One', cursive;        
     letter-spacing: 1px;
-    color:#333;
-    margin-top: 50px;
-    font-size: 27px;
-    margin-bottom: 30px;      
+    color:#444;
+    margin-top: 15px;
+    font-size: 35px;
+    margin-bottom: 60px;      
 }
 .homepage-section .content-wrapper .offering-card{
     display: inline-block;
@@ -74,23 +109,43 @@ a{
     border: 1px solid #ddd;
     box-shadow: 0px 12px 23px -13px;
 }
-.homepage-section .content-wrapper .offering-card .icon img{
-    width:50px;
+.homepage-section .content-wrapper img{
+    max-width:200px;
 }
-.homepage-section .content-wrapper .offering-card h2.title{
+.homepage-section .content-wrapper p{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
     color: #555;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    border-bottom: 1px solid #ddd;
+    margin-top:20px;
+    line-height: 40px;
 }
-.homepage-section .content-wrapper .offering-card p.desc{
-    font-weight: 600;
-    color: rgba(0,0,0,0.5);
+.textileMachinery-card{
+    text-align: center;    
+    padding: 10px;
+    margin-top: 35px;
+    font-size:20px;
+    margin-bottom: 35px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 0px 5px 22px -10px black;
+    -ms-box-shadow: 0px 5px 22px -10px black;
+    -webkit-box-shadow: 0px 5px 22px -10px black;
+    -moz-box-shadow: 0px 5px 22px -10px black;
 }
+
 .homepage-section .content-wrapper{
     padding-bottom:50px;
+}
+.textileMachinery .content-wrapper{
+    padding-bottom:0;
+}
+
+
+.homepage-section.zimmerScreens{
+    background:#f5f5f5;
 }
 .whoweare-section{
     background:#F5F5F5;    

@@ -14,7 +14,7 @@ and open the template in the editor.
             left:0px;                                */
     width:100%;        
     text-align:center;
-    color:white;        
+    color:white;            
 }
 
 .header .lane1{
@@ -26,9 +26,28 @@ and open the template in the editor.
     font-size: 11px;
     color: rgba(0,0,0,0.5);
 }
+.header .logo{
+    padding:10px;
+    background:white;
+    position:absolute;
+    top:0;
+}
+.header .logo img{
+    width:150px;
+    transition:all 2s;
+}
 .header .lane2{
-    background:white;  
-    padding:5px 15px;
+    transition:all 0.4s;    
+    padding: 5px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow:0px 1px 11px -5px black;
+    -ms-box-shadow:0px 1px 11px -5px black;
+    -webkit-box-shadow:0px 1px 11px -5px black;
+    -moz-box-shadow:0px 1px 11px -5px black;
 }
 ul.header-nav{
     margin-bottom:0px;
@@ -38,8 +57,31 @@ ul.header-nav{
     padding:0px 10px;
 }
 .header-nav li a{
-    color:#555;
-    font-weight:600;
+    color:white;
+    font-weight:400;
     font-size:13px;
     line-height:50px;
+}
+.headroom--not-top .logo{
+    position:relative;
+    background:transparent;
+    padding:0;
+    
+}
+.headroom--not-top .logo img{
+    width:auto;
+    height:50px;
+    transition:all 2s;
+}
+
+.headroom--not-top .header-nav li a{
+    color:#555;
+}
+.headroom--not-top .lane2{
+    background:white;
+    transition:all 0.4s;
+}
+
+.footer{
+    display:none;
 }

@@ -1,5 +1,5 @@
-<div class="header">
-    <div class="lane1 header-lane">
+<header class="header headroom">
+<!--    <div class="lane1 header-lane">
         <ul class="header-nav pull-right">
             <li>
                 <a href="#!">Inquiry</a>
@@ -9,11 +9,11 @@
             </li>
         </ul>
         <div class="clearfix"></div>
-    </div>
+    </div>-->
     <div class="lane2 header-lane">
         <div class="pull-left">
             <div class="logo">
-                <img height="50px" src="<?php echo base_url() ?>assets/images/logo.jpg">
+                <img  src="<?php echo base_url() ?>assets/images/logo1.png">
             </div>
         </div>
         <div class="pull-right">
@@ -47,4 +47,4 @@
         <div class="clearfix"></div>
     </div>
 
-</div>
+</header>
