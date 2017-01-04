@@ -22,7 +22,6 @@
             </span>
         </div>
     </div>
-
 </div>
 
 <div class="homepage-section textileMachinery">
