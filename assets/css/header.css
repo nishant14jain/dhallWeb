@@ -23,7 +23,7 @@ and open the template in the editor.
 }
 .lane1 .header-nav li a {
     line-height: inherit;
-    font-size: 11px;
+    font-size: 13px;
     color: rgba(0,0,0,0.5);
 }
 .header .logo{
@@ -59,7 +59,7 @@ ul.header-nav{
 .header-nav li a{
     color:white;
     font-weight:400;
-    font-size:13px;
+    font-size:15px;
     line-height:50px;
 }
 .headroom--not-top .logo{
