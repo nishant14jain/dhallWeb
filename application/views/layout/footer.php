@@ -32,6 +32,7 @@
         font-weight: 600;
         font-size: 16px;
         color: #333;
+        margin-bottom:5px;
         font-style:italic;
     }
     .footer ul li a{
@@ -61,7 +62,7 @@
         margin: 5px 0px;               
     }
     .footer .subFooter{
-        padding-top:30px;
+        padding-top:90px;
         padding-bottom:15px;
     }
     .subFooter h1{

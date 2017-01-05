@@ -1,8 +1,8 @@
 <div class="homepage-hero">
     <div class='overlay'>
         <div class="hero-content text-center">            
-            <h1 class="wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">DELIVERING HIGH PERFORMANCE</h1>
-            <h2 class="wow zoomIn" data-wow-delay="2s">Since 1959</h2>
+            <h1 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0s">DELIVERING HIGH PERFORMANCE</h1>
+            <h2 class="wow fadeInDown" data-wow-delay="1s">Since 1959</h2>
         </div>
     </div>
 </div>
