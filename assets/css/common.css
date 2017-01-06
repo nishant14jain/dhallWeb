@@ -34,7 +34,7 @@ a{
     background:url('../../assets/images/home-hero.jpg') fixed;
     background-size:cover;
     height:500px;
-    height: calc(100vh - 50px);
+    height:100vh;
     width: 100%;
     min-height: 400px;
 }
@@ -47,7 +47,7 @@ a{
     background:#f5f5f5;
 }
 .homepage-hero .overlay{
-    background:rgba(0,0,0,0.70);
+    background:rgba(10,15,30,0.70);
     height:100%;
     width:100%;        
 }
@@ -72,8 +72,10 @@ a{
     letter-spacing: 1px;
 }
 .hero-slider{    
-    padding:15px;
-    background:black;    
+    padding:0px 15px;
+    line-height:50px;
+    margin-top:-50px;
+    background:rgba(255,255,255,0.1);    
 }
 .hero-slider .hero-slider-arrow{
     color:rgba(255,255,255,0.7);
@@ -85,9 +87,10 @@ a{
     color:white;
 }
 .hero-slider .hero-title{
-    color:white;
-    font-weight:300;
-    font-size:16px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .homepage-section{
     padding:100px 15px;
