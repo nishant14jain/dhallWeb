@@ -262,7 +262,7 @@ ul.salientFeatures{
     top: 0;
     width: 100%;
     height: 100%;
-    background:rgba(79,0,13,0.3);
+    background:rgba(79,0,13,0.15);
 }
 .collage-wrapper .desc-section{
     display:table-cell;

@@ -72,7 +72,7 @@
             <div class='collage-wrapper'>
                 <div class='image-section'>
                     <div class='overlay'></div>
-                    <img src='<?php echo base_url() ?>assets/images/collage/1.png'>
+                    <img src='<?php echo base_url() ?>assets/images/collage/4.png'>
                 </div>
                 <div class='desc-section'>
                     <div class="red-dash"></div>
@@ -98,6 +98,13 @@
                     </div>
                 </div>
                 <div class='clearfix'></div>
+            </div>
+            <div class='collage-wrapper hidden'>
+                <img src='<?php echo base_url() ?>assets/images/collage/1.png'>
+                <img src='<?php echo base_url() ?>assets/images/collage/2.png'>
+                <img src='<?php echo base_url() ?>assets/images/collage/3.png'>
+                <img src='<?php echo base_url() ?>assets/images/collage/4.png'>
+                <img src='<?php echo base_url() ?>assets/images/collage/5.png'>
             </div>
         </div>
     </div>
