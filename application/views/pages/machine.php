@@ -6,6 +6,28 @@
         </div>
     </div>
 </div>
+<div class="hero-slider machine-hero-slider text-center">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <a href='#!'>
+                <img height='50px' src='<?php echo base_url() ?>assets/images/svg/icons-04.svg'>
+                <span>Catalogue</span>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <a href='#!'>
+                <img height='50px' src='<?php echo base_url() ?>assets/images/svg/icons-05.svg'>
+                <span>Video</span>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <a href='#!'>
+                <img height='50px' src='<?php echo base_url() ?>assets/images/svg/icons-06.svg'>
+                <span>Collage</span>
+            </a>
+        </div>
+    </div>
+</div>
 <div class="homepage-section">
     <div class="container">
         <div class="red-dash"></div>
