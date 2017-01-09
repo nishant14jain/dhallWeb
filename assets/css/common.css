@@ -128,9 +128,8 @@ a{
     text-align: center;    
     transition:all 0.3s;
     padding: 10px;
-    margin-top: 35px;
     font-size:20px;
-    margin-bottom: 35px;
+    margin:10px 0;
     text-transform:uppercase;
     letter-spacing:1px;
     cursor: pointer;
@@ -320,12 +319,7 @@ ul.salientFeatures{
 }
 /*-----------Machine Page Stuff: END-------------*/
 
-.nav-mob-btn{
-    display:none;
-    cursor:pointer;
-    color: #333;
-    padding: 15px;
-}
+
 
 /*-----------Media Queries: START-------------*/
 @media all and (max-width:960px){
@@ -333,7 +327,79 @@ ul.salientFeatures{
         display:none;
     }
     .nav-mob-btn{
+        display:block !important;
+    }
+}
+@media all and (max-width:769px){
+    .red-dash{
+        margin-left:auto;
+        margin-right:auto;
+        width:60px;
+    }
+    .homepage-section .content-wrapper p,.homepage-section h1{
+        text-align:center;
+    }
+    .homepage-section h1{
+        margin-top: 20px;        
+        margin-bottom: 25px;
+    }
+}
+
+@media all and (max-width:450px){
+    .homepage-section{
+        padding:40px 0px;
+    }
+    .homepage-hero .hero-content h1{
+        font-size:30px;
+    }
+    .homepage-hero .hero-content h2{
+        font-size:20px;
+        padding:0px 10px;
+    }
+    .homepage-section h1{
+        font-size:30px;
+    }
+    .textileMachinery-card{
+        font-size:18px;
+    }
+    .homepage-section .content-wrapper p{
+        font-size:17px;
+        text-align:justify;
+    }
+    .footer h3{
+        font-size:16px;
+    }
+    .footer .subFooter{
+        padding-top:45px;
+    }
+    .subFooter svg{
+        height:90px;
+    }
+    .subFooter h1{
+        font-size:20px;
+    }
+    .footer .copyright{
+        font-size: 11px;
+        padding: 10px;
+    }
+    ul.salientFeatures li{
+        font-size:17px;
+    }
+    .innoBleach img{
+        height:80px;
+    }
+    .innoBleach h2{
+        font-size:17px;
+    }
+    .machine-hero-slider img{
         display:block;
+        margin:0 auto;
+        padding:0;
+    }
+    .machine-hero-slider{
+        line-height:25px;
+        padding:10px 15px;
+        margin-top:-95px;
     }
 }
 /*-----------Media Queries: END-------------*/

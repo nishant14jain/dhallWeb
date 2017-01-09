@@ -8,15 +8,15 @@
 </div>
 <div class="hero-slider text-center">
     <div class="row">
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+        <div class="col-md-4 col-lg-4 col-sm-3 col-xs-3">
             <span class="hero-slider-arrow">
                 <i class="fa fa-chevron-left"></i>
             </span>
         </div>
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
-            <span class="hero-title">Background image title</span>
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6">
+            <span class="hero-title">image title</span>
         </div>
-        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+        <div class="col-md-4 col-lg-4 col-sm-3 col-xs-3">
             <span class="hero-slider-arrow">
                 <i class="fa fa-chevron-right"></i>
             </span>

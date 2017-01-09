@@ -195,9 +195,40 @@
             </ul>
             <div class="nav-mob-btn">
                 <i class="fa fa-bars"></i>
-            </div>
+            </div>            
         </div>
         <div class="clearfix"></div>
     </div>
-
 </header>
+
+<div class="mobile-sidebar">
+    <ul>
+        <li>
+            <a href="#!">Signup / Login</a>
+        </li>
+        <li>
+            <a href="#!">Home</a>
+        </li>
+        <li>
+            <a href="#!">Textile Manchinery</a>
+        </li>
+        <li>
+            <a href="#!">Rotary Screens</a>
+        </li>
+        <li>
+            <a href="#!">TFT Coating</a>
+        </li>
+        <li>
+            <a href="#!">Automation & IOT</a>
+        </li>
+        <li>
+            <a href="#!">Contact Us</a>
+        </li>
+        <li>
+            <a href="#!">Careers</a>
+        </li>
+        <li>
+            <a href="#!">Machine Inquiry</a>
+        </li>
+    </ul>
+</div>

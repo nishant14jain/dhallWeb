@@ -5,7 +5,12 @@ $(document).ready(function () {
     var headroom = new Headroom(myElement);
 // initialise
     headroom.init();
-    
-    
     new WOW().init();
+
+    $('.nav-mob-btn').click(function () {
+        $('.mobile-sidebar').animate({
+            left: '0'
+        }, 200);
+    });
 });
+

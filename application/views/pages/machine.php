@@ -1,4 +1,4 @@
-<div class="homepage-hero">
+<div class="homepage-hero innoBleach">
     <div class='overlay'>
         <div class="hero-content text-center">            
             <img class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0s" height='100px' src='<?php echo base_url() ?>assets/images/svg/icons-07.svg'>
