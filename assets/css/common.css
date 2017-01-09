@@ -320,5 +320,20 @@ ul.salientFeatures{
 }
 /*-----------Machine Page Stuff: END-------------*/
 
+.nav-mob-btn{
+    display:none;
+    cursor:pointer;
+    color: #333;
+    padding: 15px;
+}
 
-
+/*-----------Media Queries: START-------------*/
+@media all and (max-width:960px){
+    .header-nav{
+        display:none;
+    }
+    .nav-mob-btn{
+        display:block;
+    }
+}
+/*-----------Media Queries: END-------------*/

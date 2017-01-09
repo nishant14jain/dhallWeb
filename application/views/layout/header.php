@@ -193,6 +193,9 @@
                     <a href="#!">Contact Us</a>
                 </li>
             </ul>
+            <div class="nav-mob-btn">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
         <div class="clearfix"></div>
     </div>
