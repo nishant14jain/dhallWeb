@@ -97,11 +97,17 @@ ul.header-nav{
     position: fixed;    
     left: 100vw;
     width: 100%;
+    opacity:0;
     background: #222;
     height: 100vh;
     overflow-y: auto;    
     z-index: 999;
     padding-top: 75px; 
+    transition: all 0.2s linear;
+}
+.mobile-sidebar.active{
+    left:0;
+    opacity:1;
 }
 .mobile-sidebar ul{
     padding:0;

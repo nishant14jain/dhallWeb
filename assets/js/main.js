@@ -8,9 +8,10 @@ $(document).ready(function () {
     new WOW().init();
 
     $('.nav-mob-btn').click(function () {
-        $('.mobile-sidebar').animate({
-            left: '0'
-        }, 200);
+//        $('.mobile-sidebar').animate({
+//            left: '0'
+//        }, 200);
+        $('.mobile-sidebar').toggleClass('active');
     });
 });
 
